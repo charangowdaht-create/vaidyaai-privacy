@@ -5,83 +5,122 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — MediSamajh</title>
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { font-size: 28px; }
-  h2 { font-size: 20px; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
-  .updated { color: #666; font-size: 14px; margin-bottom: 30px; }
-  ul { padding-left: 20px; }
+  :root { --bg:#070D1F; --card:#0F1830; --line:#1A2A4A; --text:#E6ECF8; --muted:#8899BB; --blue:#4D9FFF; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.65; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 18px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h1 span { color: var(--blue); }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; color: var(--blue); }
+  h3 { font-size: 16px; margin: 18px 0 6px; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 14px 0; }
+  a { color: var(--blue); }
+  table { width:100%; border-collapse: collapse; font-size: 14px; margin: 10px 0; }
+  th, td { text-align:left; padding: 8px 10px; border-bottom:1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
 </style>
 </head>
 <body>
+<main>
+<h1>Medi<span>Samajh</span> — Privacy Policy</h1>
+<div class="meta">Last updated: 18 October 2026 · App version 1.1 · Developer: Charan Studios, Hassan, Karnataka, India</div>
 
-<h1>Privacy Policy — MediSamajh</h1>
-<p class="updated"><strong>Last updated:</strong> September 5, 2026</p>
+<div class="card">
+<strong>In short:</strong> MediSamajh explains medicines and medical reports in simple words in 10 Indian languages. Your photos stay on your phone — they are only sent to our AI service to create the explanation and are not stored by us. We never sell your data, show ads, or track your location. You can delete your account and data at any time from inside the app.
+</div>
 
-<p>MediSamajh ("we," "our," or "the app") is developed by Charan Studios. This policy explains what information the app collects, how it's used, and the choices you have. We've written this to reflect exactly what the app actually does — not generic boilerplate.</p>
-
-<h2>1. Information We Collect</h2>
-<p><strong>Account information (if you sign in with Google):</strong><br>
-Your name, email address, and profile photo, as provided by Google. Signing in is optional — you can use the app's core features without an account by choosing "Skip for now."</p>
-
-<p><strong>Health-related content you provide:</strong></p>
+<h2>1. Information we collect</h2>
+<h3>a) If you sign in with Google (optional)</h3>
 <ul>
-  <li>Photos you take or upload of medicine labels, strips, packaging, and medical reports (blood tests, X-rays, prescriptions, and similar documents)</li>
-  <li>AI-generated summaries and explanations of the above</li>
-  <li>Medicine names, doses, schedules, and refill tracking information you enter</li>
-  <li>Reminders you set (medicine doses, checkups, custom reminders, water intake)</li>
-  <li>Conversations with the in-app health assistant ("Mitra"), including any report images or summaries you choose to attach to a question</li>
-  <li>Profiles for family members you choose to add, and any information you enter for them</li>
+  <li>Your name, email address and profile photo from your Google account — used only to create your account and show your name in the app.</li>
+</ul>
+<h3>b) Health information you choose to add</h3>
+<ul>
+  <li><strong>Photos you scan</strong> (medicine packs, prescriptions, lab reports) and documents you add to Reports.</li>
+  <li><strong>The explanations</strong> the app creates for those scans, and the reports and folders you save.</li>
+  <li><strong>Profile and family details</strong> you enter, such as age, blood group, height and family member profiles.</li>
+</ul>
+<h3>c) Information created automatically</h3>
+<ul>
+  <li><strong>A random app ID</strong> for your phone. It is not linked to your name, phone number or the phone's real identifiers. Our server uses it only to stop misuse (for example, too many scans in one minute).</li>
+  <li><strong>A count of today's scans</strong>, kept on your phone, for the free daily scan limit.</li>
+  <li><strong>Basic technical logs</strong> on our server (time of a request and whether it succeeded or failed), kept for a short time for security and fixing problems.</li>
+  <li><strong>App settings</strong> such as your chosen language.</li>
 </ul>
 
-<p><strong>App preferences:</strong><br>
-Your selected language, notification settings, and similar in-app choices.</p>
-
-<h2>2. How Your Information Is Used</h2>
-<p><strong>AI-powered features:</strong> When you scan a medicine or report, or ask the in-app assistant a question, the relevant image and/or text is sent to Anthropic's Claude API for real-time analysis, in order to generate the explanation or answer you see. We don't control Anthropic's own data handling for these API requests beyond what's described in Anthropic's own terms — you can review those directly at anthropic.com.</p>
-
-<p><strong>Cloud backup (if signed in with Google):</strong> Text-based data — your medicines, reminders, and report summaries — is backed up to Google Firebase (Firestore), tied to your Google account, so it can be restored if you reinstall the app or switch devices. <strong>Photos are not backed up to the cloud</strong> — they remain stored only on your device.</p>
-
-<p><strong>Local storage:</strong> By default, most app data (including all photos) is stored locally on your device, not on our servers.</p>
-
-<h2>3. What We Don't Do</h2>
+<h2>2. How your information is used</h2>
 <ul>
-  <li>We don't sell your personal or health information to anyone</li>
-  <li>We don't use advertising trackers or third-party ad networks</li>
-  <li>We don't collect your location</li>
-  <li>We don't store your scanned photos in the cloud</li>
+  <li><strong>To explain your scans:</strong> when you scan, the photo is first made smaller on your phone, then sent securely (HTTPS) through our server to Anthropic's Claude AI, which creates the explanation. We do not store your photos on our server.</li>
+  <li><strong>Body Map:</strong> when you ask about a body part, the name of that body part and your chosen language are sent the same way to create the explanation.</li>
+  <li><strong>To back up your data (only if you sign in):</strong> text information — report explanations, profile and family details — is backed up to your own private space in Google Firebase, so you can restore it on a new phone. <strong>Photos are never uploaded to the backup.</strong></li>
+  <li><strong>To keep the service working and safe:</strong> the random app ID and technical logs help us prevent misuse and keep costs under control so the app can stay free.</li>
+</ul>
+<p>Most of your data is stored only on your phone. If you do not sign in, the only things that leave your phone are what you send for an explanation (scan photos and Body Map questions), together with the random app ID.</p>
+
+<h2>3. What we never do</h2>
+<ul>
+  <li>We never sell your personal or health information.</li>
+  <li>We do not show ads or use advertising trackers.</li>
+  <li>We do not collect your location.</li>
+  <li>We do not upload your scanned photos to any cloud backup.</li>
+  <li>We do not give medical diagnoses or suggest medicines.</li>
 </ul>
 
-<h2>4. Third Parties We Work With</h2>
+<h2>4. Services we use</h2>
+<table>
+  <tr><th>Service</th><th>What it does for MediSamajh</th></tr>
+  <tr><td>Anthropic (Claude AI)</td><td>Reads scan photos and writes the explanation. <a href="https://www.anthropic.com/legal/privacy">Anthropic privacy policy</a></td></tr>
+  <tr><td>Cloudflare</td><td>Runs our secure server that passes scans to the AI and applies usage limits. <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a></td></tr>
+  <tr><td>Google Firebase &amp; Google Sign-In</td><td>Optional sign-in and private backup of your text data. <a href="https://policies.google.com/privacy">Google privacy policy</a></td></tr>
+  <tr><td>Google Play</td><td>App delivery, and an optional in-app prompt to rate the app.</td></tr>
+</table>
+<p>These companies process data only to provide these services to us.</p>
+
+<h2>5. Sharing that you choose</h2>
 <ul>
-  <li><strong>Anthropic</strong> — processes images and text you submit for AI-generated explanations and chat responses</li>
-  <li><strong>Google / Firebase</strong> — provides sign-in and cloud backup of text data</li>
-  <li><strong>Google Play Services</strong> — standard platform services for any Android app</li>
+  <li><strong>Share on WhatsApp:</strong> if you tap Share, the explanation is passed to WhatsApp (or another app you pick) and sent to the people you choose. That is then handled under WhatsApp's own privacy policy.</li>
+  <li><strong>Translation feedback:</strong> if you tap "Some words wrong", your email app opens with the explanation so you can send it to us to improve the language. Nothing is sent unless you press send.</li>
 </ul>
 
-<h2>5. Your Choices</h2>
+<h2 id="delete">6. Your choices and rights</h2>
 <ul>
-  <li>You can use the app without signing in at all</li>
-  <li>You can sign out at any time from the Profile screen</li>
-  <li>You can request deletion of your account and associated data by contacting us (below)</li>
-  <li>You can decline any specific permission (camera, notifications) — some features may not work without it</li>
+  <li>Use the app without signing in.</li>
+  <li>Allow or deny the camera and photo permissions at any time in your phone settings.</li>
+  <li>Delete any saved report inside the app.</li>
+  <li><strong>Delete your account:</strong> open <em>Profile → Delete my account</em>. This permanently deletes your account and your cloud backup, and clears the app data on that phone. You can also email us — see our <a href="delete-account.html">Delete account page</a>.</li>
+  <li>Under India's Digital Personal Data Protection Act, 2023, you can ask to access, correct or erase your personal data, and raise a complaint with our Grievance Officer (below).</li>
 </ul>
 
-<h2>6. Data Security</h2>
-<p>We use industry-standard measures, including encrypted transmission (HTTPS) for data sent to our servers and third-party processors. No method of transmission or storage is 100% secure, and we can't guarantee absolute security.</p>
+<h2>7. How long we keep data</h2>
+<ul>
+  <li><strong>On your phone:</strong> until you delete it, delete your account, or uninstall the app.</li>
+  <li><strong>Cloud backup (signed-in users):</strong> until you delete your account.</li>
+  <li><strong>Scan photos:</strong> not kept on our server after the explanation is created.</li>
+  <li><strong>Technical server logs:</strong> a few days.</li>
+</ul>
 
-<h2>7. Medical Disclaimer</h2>
-<p>MediSamajh provides general information to help you understand medicines and medical reports. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified doctor or pharmacist regarding your health and medications.</p>
+<h2>8. Security</h2>
+<p>All data is sent over encrypted connections (HTTPS). The key for our AI service is kept only on our server, never inside the app. Your cloud backup is stored under your own signed-in account and is not shared with other users. No method is 100% secure, but we take reasonable steps to protect your information.</p>
 
-<h2>8. Children's Privacy</h2>
-<p>MediSamajh is not directed at children under 13, and we do not knowingly collect information from children under that age.</p>
+<h2>9. Medical disclaimer</h2>
+<p>MediSamajh gives general information to help you understand medicines and reports. It is <strong>not a diagnosis, treatment or medical advice</strong>, and it is not a substitute for a doctor or pharmacist. AI explanations can contain mistakes. Always follow your doctor's advice.</p>
 
-<h2>9. Changes to This Policy</h2>
-<p>We may update this policy from time to time. Material changes will be reflected by updating the "Last updated" date above.</p>
+<h2>10. Children</h2>
+<p>MediSamajh is meant for adults aged 18 and above. Children should use it only with a parent or guardian. We do not knowingly collect personal data from children; if you believe a child has given us data, contact us and we will delete it.</p>
 
-<h2>10. Contact Us — Grievance Officer</h2>
-<p>For questions about this policy, complaints, or to request data deletion, contact our Grievance Officer:</p>
-<p><strong>Charan Gowda</strong><br>
-Email: <a href="mailto:vaidyaai.support@gmail.com">vaidyaai.support@gmail.com</a></p>
+<h2>11. Changes to this policy</h2>
+<p>If we change this policy, we will update the "Last updated" date above. For important changes, we may also ask you to review the policy again inside the app.</p>
 
+<h2>12. Contact &amp; Grievance Officer</h2>
+<div class="card">
+Grievance Officer: <strong>Charan Gowda</strong><br>
+Charan Studios, Hassan, Karnataka, India<br>
+Email: <a href="mailto:vaidyaai.support@gmail.com">vaidyaai.support@gmail.com</a><br>
+For questions, complaints, or requests to access, correct or delete your data. We aim to reply within 7 days and to resolve requests within 30 days.
+</div>
+</main>
 </body>
 </html>
